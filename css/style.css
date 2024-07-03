@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg-cover {
+    background-image: url('/assets/photos/header_blur.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(30%);
+    height: 100vh;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-logo {
+    width: 6rem;
+    height: auto;
+}
+
