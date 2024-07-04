@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salvador</title>
+    <title>Salvator Vojenské svetry</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -14,7 +14,7 @@
             <div class="text-white font-bold flex items-center border-white">
                 <img src="/assets/logo/salvator_main.png" alt="Logo" class="nav-logo border-r border-white"> 
                  <div class="px-2">
-                    Vojenske <br>
+                    Vojenské <br>
                     Svetry Salvator
                  </div>
             </div>
@@ -25,47 +25,43 @@
                 <a href="#" class="text-white px-4">Mapa</a>
             </div>
         </nav>
-        <div class="flex flex-1 items-center justify-between px-6 space-y-8">
+        <div class="flex flex-1 items-center justify-between px-6 space-y-8 pt-12">
             <div class="text-white max-w-lg">
-                <h1 class="text-6xl font-bold">Vojenske Svetry</h1>
+                <h1 class="text-6xl font-bold">Vojenské Svetry</h1>
                 <div class="pb">
                     <p class="mt-4">
                         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat.
                     </p>
                 </div>
                 <div class="pb-4 text-center">
-                    <p class="mt-4 text-2xl">
-                        Univerzalni Velikost
+                    <p class="mt-4 text-2xl font-bold">
+                        Univerzalní Velikost
                     </p>
                 </div>
                 <div class="mt-4 flex items-center justify-center space-x-8 pb-4">
-                    <div class="flex items-center space-x-2 pr-6">
-                        <span>Zeleny</span>
+                    <div class="flex items-center space-x-2 pr-6 gentle-tilt-move-shake cursor-pointer" id="header_color_green">
+                        <span class="text-green-800">Zelený</span>
                         <div class="w-6 h-6 bg-green-800 rounded-full"></div>
                     </div>
-                    <div class="flex items-center space-x-2">
-                        <span>Sedy</span>
+                    <div class="flex items-center space-x-2 gentle-tilt-move-shake cursor-pointer" id="header_color_gray">
+                        <span class="text-gray-400">Šedý</span>
                         <div class="w-6 h-6 bg-gray-400 rounded-full"></div>
                     </div>
                 </div>
                 <div class="mt-4 flex items-center justify-center space-x-8 pb-4">
                     <div class="flex items-center space-x-2 pr-6">
-                        <span>Zeleny</span>
+                        <span>Ten Svetr chci</span>
                     </div>
                     <div class="flex items-center space-x-2">
-                        <span>Sedy</span>
-                        <div class="w-6 h-6 bg-gray-400 rounded-full"></div>
+                        <span>Kontakt</span>
                     </div>
-                </div>
-                <div class="mt-4">
-                    <button class="bg-orange-500 text-white px-4 py-2 rounded">To chci</button>
-                    <button class="bg-transparent border border-white text-white px-4 py-2 rounded ml-4">Kontakt</button>
                 </div>
             </div>
             <div>
-                <img src="/assets/photos/header.JPG" alt="Man in forest" class="w-96 h-auto rounded-lg">
+                <img id="header_photo" src="/assets/photos/header_green.JPG" alt="Man in forest" class="w-96 h-auto rounded-lg transition-opacity">
             </div>
         </div>
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
