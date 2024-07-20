@@ -1,6 +1,7 @@
-header_photo = document.getElementById("header_photo")
-header_color_green = document.getElementById("header_color_green")
-header_color_gray = document.getElementById("header_color_gray")
+const header_photo = document.getElementById("header_photo")
+const background_photo = document.getElementsByClassName("bg-cover")[0]
+const header_color_green = document.getElementById("header_color_green")
+const header_color_gray = document.getElementById("header_color_gray")
 
 header_color_green.addEventListener("mouseover", () => {
     header_photo.src="/assets/photos/header_green.JPG"
@@ -21,8 +22,25 @@ function startAnimations() {
     applyAnimation(header_color_green)
     setTimeout(() => {
         applyAnimation(header_color_gray)
-    }, 5000)
+    }, 3500)
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.getElementById('slider')
+    let scrollAmount = 0
+
+    function slide() {
+        scrollAmount -= 1
+        if (scrollAmount <= -slider.scrollWidth / 2) {
+            scrollAmount = 0
+        }
+        slider.style.transform = `translateX(${scrollAmount}px)`
+        requestAnimationFrame(slide)
+    }
+
+    slide()
+})
+
+
 startAnimations()
-setInterval(startAnimations, 10000)
+setInterval(startAnimations, 7000)
