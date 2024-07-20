@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto; 
+}
+
+.bg-cover {
+    background-image: url('/assets/photos/header_blur.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(30%);
+    height: 100vh;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+.nav-logo {
+    width: 6rem;
+    height: auto;
+}
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+.tilt-n-move-shaking {
+    animation: tilt-n-move-shaking 1.5s infinite;
+}
