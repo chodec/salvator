@@ -2,7 +2,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: auto; 
+    overflow: auto;
+    scroll-behavior: smooth; 
 }
 
 .bg-cover {
@@ -31,6 +32,7 @@ html, body {
     75% { transform: translate(-5px, 5px) rotate(-5deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
 }
+
 .tilt-n-move-shaking {
     animation: tilt-n-move-shaking 1.5s infinite;
 }
