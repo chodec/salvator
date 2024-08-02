@@ -8,7 +8,6 @@ html, body {
 
 .bg-cover {
     background-image: url('/assets/photos/header_blur.jpg');
-    background-size: cover;
     background-position: center;
     filter: brightness(30%);
     height: 100vh;

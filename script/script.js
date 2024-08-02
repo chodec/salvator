@@ -4,11 +4,11 @@ const header_color_green = document.getElementById("header_color_green")
 const header_color_gray = document.getElementById("header_color_gray")
 
 header_color_green.addEventListener("mouseover", () => {
-    header_photo.src="/assets/photos/header_green.JPG"
+    header_photo.src="/assets/photos/header_green.jpeg"
 })
 
 header_color_gray.addEventListener("mouseover", () => {
-    header_photo.src="/assets/photos/header_gray.JPG"
+    header_photo.src="/assets/photos/header_gray.jpeg"
 })
 
 const applyAnimation = (element) => {
