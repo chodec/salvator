@@ -35,3 +35,36 @@ html, body {
 .tilt-n-move-shaking {
     animation: tilt-n-move-shaking 1.5s infinite;
 }
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #f2f2f2;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    display: none; 
+}
+
+.cookie-banner p {
+    display: inline;
+    margin-right: 10px;
+}
+
+.cookie-banner button {
+    background-color: #da251d;
+    color: #f2f2f2;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cookie-banner button:hover {
+    background-color: #f7ed00;
+    color: #333;
+}

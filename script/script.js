@@ -41,6 +41,20 @@ document.addEventListener('DOMContentLoaded', function() {
     slide()
 })
 
+function showCookieBanner() {
+    const cookieAccepted = localStorage.getItem("cookieAccepted")
+    if (!cookieAccepted) {
+        document.getElementById("cookie-banner").style.display = "block"
+    }
+}
+
+function acceptCookies() {
+    localStorage.setItem("cookieAccepted", "true");
+    document.getElementById("cookie-banner").style.display = "none"
+}
+
+document.addEventListener("DOMContentLoaded", showCookieBanner)
+
 
 startAnimations()
 setInterval(startAnimations, 7000)
